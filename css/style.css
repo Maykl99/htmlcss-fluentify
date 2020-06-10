@@ -52,7 +52,7 @@ a:visited{
 
 
 
-.container{   /* Contenitore generale nell'HTML viene ripetuto per TRE volte */
+.container{   /* Contenitore generale nell'HTML viene ripetuto per DUE volte poi al footer c'è un cotenitore molto simile*/
     max-width: 85%;
     margin:  auto;
     height: 100%;
