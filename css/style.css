@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* background-color: rgb(191, 191, 101) */
+/* .contenitore_generale{
+    max-width: 80%;
+    margin: 20px auto;
+} */
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container{
+    max-width: 85%;
+    margin:  auto;
+    height: 100%;
+} 
+
+header{
+    background-color: #0C325A;
+    height: 430px;
+}
+
+.background_image{
+    background-image: url('https://cdn.fluentify.com/bundles/fluentifypublic/images/r4b/01/oldman.png');
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 40px;
+}
+
+.logo, ul{
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
+    padding: 7px;
+    text-transform: uppercase;
+    color: white;
+}
+
+li:last-child{
+    color: red;
+    margin-left: 42px;
+}
+.logo img{
+    width: 180px;
+    padding: 15px 20px;
+    vertical-align: middle;
+}
+
+section span{
+    border: 1px solid;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+section button{
+    color: white;
+    background: green;
+    border: 0;
+    padding: 13px 20px;
+    border-radius: 9px;
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+section h1{
+    color: white;
+    margin-bottom: 12px;
+    margin-top: 30px;
+    margin-left: 26px;
+    font-size: 30px;
+}
+
+#sotto{
+    margin-left: 28px;
+}
+
+
+/* == Inizio Main ======= */
+
+
+main{
+    /* height: 1000px; */
+    /* background-color: rgb(191, 191, 101); */
+}
+
+.presentazione{
+    height: 100px;
+    background-color: #D3D3D3;
+    text-align: center;
+    line-height: calc(30px / 1);
+    padding-top: 20px;
+}
+
+.presentazione div:first-child{
+    font-weight: bold;
+    font-size: 23px;
+}
+.presentazione div:last-child{
+    color: gray;
+}
+
+.row .col_first{
+    width: 33.333%;
+    background: white;
+    height: 450px;
+    float: left;
+}
+
+.col_first img{
+    height: 250px;
+    margin-left: 25%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#secondo_img, #terzo_img{
+    margin-left: 77px;
+}
+
+.col_first p{
+    text-align: center;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.col_first div{
+    margin-left: 25%;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.omino{
+    width: 50%;
+    height: 500px;
+    background: white;
+    float: left;
+    position: relative;
+}
+
+.omino img{
+    height: 401px;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+
+.second .col_second{
+    width: 50%;
+    height: 400px;
+    background: white;
+    float: left;
+    position: relative;
+}
+
+.col_second div{
+    width: 45%;
+    position: absolute;
+    bottom: 50px
+}
+
+.col_second div h3{
+    font-size: 30px;
+    padding-bottom: 13px;
+}
+
+footer{
+    height: 100px;
+    background-color: gray;
+}
+
+footer div:first-child{
+    width: 50%;
+    text-align: center;
+    font-size: 23px;
+    line-height: 100px;
+    float: left;
+}
+
+footer div:last-child{
+    width: 50%;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+
+footer button{
+    color: white;
+    background: green;
+    border: 0;
+    padding: 12px 12px;
+    border-radius: 22px;
+    font-size: 14px;
+    margin-left: 32px;
+}
