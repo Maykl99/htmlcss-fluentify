@@ -2,14 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
 }
-
-/* background-color: rgb(191, 191, 101) */
-/* .contenitore_generale{
-    max-width: 80%;
-    margin: 20px auto;
-} */
 
 .clearfix::after{
     content: '';
@@ -17,7 +11,48 @@
     clear: both;
 }
 
-.container{
+/* Alcune proprietà si ripetono, il codice non è pulitissimo, ma dopo ore di codice questo è il massimo che la mia mente riesce ad elaborare xd */
+
+                        /* '''''Eventi'''' se così si possono chiamare  */
+
+li:hover{
+    border-bottom: 2px solid green;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+}
+
+button:hover{
+    background-color: tomato;
+}
+
+section span:hover{
+    color: tomato;
+}
+
+a:active {
+    color: red;
+  }                
+  
+.help:hover{
+    background-color: tomato;
+}
+
+h4:hover{
+    color: #7CBB02;
+    cursor: pointer;
+}
+
+a:visited{
+    text-decoration: none; 
+    color: green;
+}
+
+
+                        /* FINE 'Eventi' */
+
+
+
+.container{   /* Contenitore generale nell'HTML viene ripetuto per TRE volte */
     max-width: 85%;
     margin:  auto;
     height: 100%;
@@ -41,15 +76,19 @@ header{
     display: inline-block;
 }
 
+li,button,section span{
+    cursor: pointer;
+}
+
 li{
     display: inline-block;
     padding: 7px;
     text-transform: uppercase;
     color: white;
+    font-weight: 700;
 }
 
 li:last-child{
-    color: red;
     margin-left: 42px;
 }
 .logo img{
@@ -59,15 +98,17 @@ li:last-child{
 }
 
 section span{
-    border: 1px solid;
+    border: 1.5px solid;
     padding: 12px 25px;
     border-radius: 5px;
     margin-left: 10px;
+    text-transform: uppercase;
+    color: white;
 }
 
 section button{
     color: white;
-    background: green;
+    background: #7CBB02;
     border: 0;
     padding: 13px 20px;
     border-radius: 9px;
@@ -80,15 +121,18 @@ section h1{
     margin-bottom: 12px;
     margin-top: 30px;
     margin-left: 26px;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 #sotto{
     margin-left: 28px;
 }
 
+hr{
+    margin-top: 80px;
+}
 
-/* == Inizio Main ======= */
+/* ================== Inizio MAIN ================*/
 
 
 main{
@@ -98,7 +142,7 @@ main{
 
 .presentazione{
     height: 100px;
-    background-color: #D3D3D3;
+    background-color: #4F82B5;
     text-align: center;
     line-height: calc(30px / 1);
     padding-top: 20px;
@@ -107,9 +151,16 @@ main{
 .presentazione div:first-child{
     font-weight: bold;
     font-size: 23px;
+    color: #F1F4EA;
 }
+
 .presentazione div:last-child{
-    color: gray;
+    color: #F1F4EA;
+}
+
+.row.clearfix{
+    height: 550px;
+    margin-top: 40px;
 }
 
 .row .col_first{
@@ -145,6 +196,20 @@ main{
     font-weight: bold;
 }
 
+
+
+#modifica1{
+    padding-left: 100px;
+}
+
+#modifica2{
+    padding-left: 20px
+}
+
+#modifica3{
+    padding-left: 66px
+}
+
 .omino{
     width: 50%;
     height: 500px;
@@ -171,7 +236,8 @@ main{
 .col_second div{
     width: 45%;
     position: absolute;
-    bottom: 50px
+    bottom: 50px;
+    left: 15%;
 }
 
 .col_second div h3{
@@ -179,9 +245,19 @@ main{
     padding-bottom: 13px;
 }
 
+/* ================== Inizio FOOTER ================*/
+
 footer{
     height: 100px;
-    background-color: gray;
+    background-color: #4F82B5;;
+}
+
+h4{
+    color: #F1F4EA;
+}
+
+select{
+    cursor: pointer;
 }
 
 footer div:first-child{
@@ -201,10 +277,38 @@ footer div:last-child{
 
 footer button{
     color: white;
-    background: green;
+    background: #7CBB02;
     border: 0;
     padding: 12px 12px;
     border-radius: 22px;
     font-size: 14px;
     margin-left: 32px;
+}
+
+div>span{
+    color: #F1F4EA;
+}
+
+.help{
+    position: fixed;
+    bottom: 10px;
+    left: 90%;
+    background-color: #7CBB02;
+    width: 70px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 15px;
+}
+
+.help a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.container_footer{
+    height: 100%;
+    width: 85% !important;
+    margin-left: 7.5%;
 }
